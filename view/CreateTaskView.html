@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<body onload="retrieveGroupsAndTasks()">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+       
+        
+        <div id="groups">
+            
+        </div>
+        
+        
+
+    </div>
+    <div class="col-md-2"></div>
+    
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 id="pedidoDetalhes" class="modal-title"></h4>
+          
+        </div>
+        <div class="modal-body">
+         <div id="modalBody" class="form-group">
+                        <label id="lblPedido">Detalhes Pedido</label>
+                        
+                        <input type="text"  id="idTask" style="display:none" name="idTask" class="form-control">
+                        <input type="text" id="txtTask" name="txtTask" class="form-control">
+                        <span id="errorTask"></span>
+                    </div>
+                    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
